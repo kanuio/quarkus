@@ -27,6 +27,25 @@ _All under ONE framework._
 
 ## Getting Started
 
+The easiest way to create a new Quarkus project is to open a terminal and run the following command:
+For Linux & MacOS users
+
+        mvn io.quarkus:quarkus-maven-plugin:1.13.4.Final:create \
+        -DprojectGroupId=org.acme \
+        -DprojectArtifactId=getting-started \
+        -DclassName="org.acme.getting.started.GreetingResource" \
+        -Dpath="/hello";
+
+Your new application has been created in ~/getting-started
+
+        cd getting-started
+
+Navigate into this directory and launch your application with
+
+        mvn quarkus:dev
+
+Your application will be accessible on http://localhost:8080
+
 * [Documentation](https://quarkus.io)
 * [Wiki](https://github.com/quarkusio/quarkus/wiki)
 
